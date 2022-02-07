@@ -1,0 +1,15 @@
+/************* Print 1 To N using BackTracking ************/
+
+void print1ToNUsingBacktracking(int i){
+      if(i<1){
+            return;
+      }
+      print1ToNUsingBacktracking(i-1);
+      cout<<i<<" "<<endl;
+}
+int main(){
+      int n;
+      cin>>n;
+      print1ToNUsingBacktracking(n);
+      return 0;
+}
